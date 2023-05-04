@@ -1,0 +1,9 @@
+https://colab.research.google.com/drive/1pypH9MdPpFvz0S2zUP_7rigsNMR0VuOI#scrollTo=f4-zWX7Y_Aq0
+
+This was a class assignment for my Big Data Management Course. We were given a public law document, where we used the mapReduce paradigm in order to
+do analysis on the words. I started by splitting each line of the document into each individual word, where I then mapped the words to a tuple (word, 1.)
+I then sorted the tuples by count in descending order, which showed the number of times a word was used, with the most at the top. I took the top 10
+words to ensure the data was correct. To then find the wordles, I filtered out the words which did not meet the 'wordle' criteria (wordles are 5 letters 
+long, with no digits,) then with all of the wordles left in the data, I mapped the the wordles to the tuple (word, 1) and again sorted them by count in
+descending order, again ensuring the data as correct with the top 10 values. The challenges with this assignment came with finding the wordles that began
+and ended with the same letter, and finding the wordles where all 5 letters are distinct.
